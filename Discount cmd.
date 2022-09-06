@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SoloLearn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int totalPrice = Convert.ToInt32(Console.ReadLine());
+            
+            Discount(totalPrice);            
+            
+        }
+        //complete the method declaration
+        static void Discount(int x)
+        {
+
+        double i = x;
+
+        if (i >= 10000){
+
+            i = i-(0.2*i);
+
+        } else i = x;
+
+       Console.WriteLine(i);
+
+        }
+    }
+}
